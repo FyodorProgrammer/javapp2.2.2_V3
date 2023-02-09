@@ -1,6 +1,7 @@
 package web.model;
 
 public class Car {
+    private long id;
     private String manufacturer;
 
     private String model;
@@ -10,10 +11,18 @@ public class Car {
     public Car() {
     }
 
-    public Car(String manufacturer, String model, int serial_number) {
+    public Car(long id, String manufacturer, String model, int serial_number) {
         this.manufacturer = manufacturer;
         this.model = model;
         this.serial_number = serial_number;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getManufacturer() {
